@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is my home page</h1>
+    <form action="{% url 'result' %}">
+        {% csrf_token %}
+
+        Number of hours : <input type="text", required name="noh"> <br> <br>
+        Average hours used each day : <input type="text", required name="avg"> <br> <br>
+        Number of days after last maintenance : <input type="text", required name="nod"> <br> <br>
+
+        <input type="submit", name="" value="submit">
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>.login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+
+        padding: 30px;
+        background: #C0C0C0;
+        border-radius: 15px ;
+
+}</style>
+</head>
+<body style="background-image: url('https://cdn.hipwallpaper.com/i/21/78/QWV70B.jpg');  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;">
+    <br>
+    <br><br><br><br><br><br>
+    <div class="login">
+        
+        <h1>Boiler Information</h1>
+        <hr>
+    <form action="{% url 'result' %}">
+        {% csrf_token %}
+
+        Number of hours : <input type="text", required name="noh"> <br> <br>
+        Avg. hours/day  :<input type="text", required name="avg"> <br> <br>
+        Number of days after<br> last maintenance : <input type="text", required name="nod"> <br> <br>
+
+        <input class="btn btn-success"  type="submit", name="" value="submit">
+    </form>
+</div>
+<br><br><br><br><br><br>
+</body>
+</html>
